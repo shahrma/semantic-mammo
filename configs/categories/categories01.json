@@ -1,0 +1,96 @@
+{
+    "breast density": {
+        "N/A":0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "unknown": 5,
+        "0": 6
+    },
+    "mass shape": {
+        "N/A": 0,
+        "ARCHITECTURAL_DISTORTION": 1,
+        "ASYMMETRIC_BREAST_TISSUE": 2,
+        "FOCAL_ASYMMETRIC_DENSITY": 3,
+        "IRREGULAR": 4,
+        "LOBULATED": 5,
+        "LYMPH_NODE": 6,
+        "OVAL": 7,
+        "ROUND": 8,
+        "unknown": 9
+    },
+    "mass margins": {
+        "N/A": 0,
+        "CIRCUMSCRIBED": 1,
+        "ILL_DEFINED": 2,
+        "MICROLOBULATED": 3,
+        "OBSCURED": 4,
+        "SPICULATED": 5,
+        "unknown": 6
+    },
+    "mass density": {
+        "N/A": 0,
+        "1.0": 1,
+        "2.0": 2,
+        "2.5": 3,
+        "3.0": 4,
+        "4.0": 5,
+        "unknown": 6
+    },
+    "calc associated": {
+        "N/A": 0,
+        "False": 1,
+        "True": 2,
+        "unknown": 3
+    },
+    "calc morphology": {
+        "N/A": 0,
+        "AMORPHOUS": 1,
+        "COARSE": 2,
+        "DYSTROPHIC": 3,
+        "EGGSHELL": 4,
+        "FINE_LINEAR_BRANCHING": 5,
+        "INDISTINCT": 6,
+        "LARGE_RODLIKE": 7,
+        "LUCENT_CENTER": 8,
+        "LUCENT_CENTERED": 9,
+        "MILK_OF_CALCIUM": 10,
+        "PLEOMORPHIC": 11,
+        "PUNCTATE": 12,
+        "ROUND_AND_REGULAR": 13,
+        "SKIN": 14,
+        "VASCULAR": 15,
+        "unknown": 16
+    },
+    "calc distribution": {
+        "N/A": 0,
+        "CLUSTERED": 1,
+        "DIFFUSELY_SCATTERED": 2,
+        "LINEAR": 3,
+        "REGIONAL": 4,
+        "SEGMENTAL": 5,
+        "unknown": 6
+    },
+    "abnormality type": {
+        "N/A": 0,
+        "calcification": 1,
+        "mass": 2,
+        "unknown": 3
+    },
+    "num abnormalities": {
+        "N/A": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "unknown": 8
+    },
+    "pathology": {
+        "benign": 0,
+        "malignant": 1
+    }
+}

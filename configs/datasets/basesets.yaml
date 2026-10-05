@@ -1,0 +1,75 @@
+used_dataset: ['CMMD','CBIS_DDSM']
+
+datasets:
+  CMMD:
+    data_path: ../../worksets/CMMD/rois/data_251105_cfixed_resized_384
+    type: roi
+    source: manual
+    subset: ['mass','calcification']
+    folds_train:
+      - train_0
+      - train_1
+      - train_2
+      - train_3
+      - train_4
+    folds_valid:
+      - test
+    folds_test:
+      - test
+    preprocess:
+      stretch_type: 'norm'
+      stretch_args:
+        max_value: 255
+        mean: 0.5
+        std: 0.25
+  CBIS_DDSM:
+    data_path: ../../worksets/DDSM/rois/data_251105_cfixed_resized_384
+    type: roi
+    source: manual
+    subset: ['mass','calcification']
+    folds_train:
+      - train_0
+      - train_1
+      - train_2
+      - train_3
+      - train_4
+    folds_valid:
+      - test
+    folds_test:
+      - test
+    preprocess:
+      stretch_type: 'norm'
+      stretch_args:
+        max_value: 65535
+        mean: 0.5
+        std: 0.25
+
+preprocess:
+  add_unknown: True
+#  stretch_type: 'norm'
+#  stretch_args:
+#    max_value: 255
+#    mean: 0.5
+#    std: 0.25
+  output_size: 224
+  depth_duplication: 3
+  augmentation_steps: ["rotate", "crop", "jitter" ,"flip","noise", "erase"]
+  augmentation:
+    rotate:
+      max_rotation_deg: 15
+    noise:
+      noise_a: 0.01
+      noise_b: 0.05
+    jitter:
+      brightness_jitter: 0.15
+      contrast_jitter: 0.15
+    crop:
+      scale_a: 0.9
+      scale_b: 1.1
+      max_shift: 20
+    erase:
+      sl: 0.02
+      sh: 0.1
+      r1: 0.3
+
+

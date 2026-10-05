@@ -1,0 +1,15 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0
+torchvision==0.21.0
+numpy==2.4.4
+pandas==3.0.3
+scikit-learn==1.8.0
+scipy==1.17.1
+matplotlib==3.10.9
+pillow==12.2.0
+PyYAML==6.0.3
+wandb==0.27.0
+# data preparation (scripts/)
+opencv-python==4.13.0.92
+pydicom==3.0.2
+tqdm==4.67.3

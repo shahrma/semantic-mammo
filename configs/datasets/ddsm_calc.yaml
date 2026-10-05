@@ -1,0 +1,8 @@
+base_config: configs/datasets/basesets.yaml
+
+used_dataset: ['CBIS_DDSM']
+datasets:
+  CMMD:
+    subset: ['calcification']
+  CBIS_DDSM:
+    subset: ['calcification']

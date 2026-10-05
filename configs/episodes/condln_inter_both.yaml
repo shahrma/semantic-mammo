@@ -1,0 +1,58 @@
+base_config: configs/episodes/base.yaml
+
+model:
+  model_source: o
+  model_type: wrapped_convnext_base
+  model_weights: IMAGENET1K_V1
+  model_args: null
+  in_channels: 3
+  use_pretrained: True
+  replacing_list:
+    abnormality type:
+      layers:
+        - 'features.5.1.*'
+        - 'features.5.7.*'
+        - 'features.5.13.*'
+      params:
+        init_type: 'biased'
+        active_mode: 'mlp'
+    breast density:
+      layers:
+        - 'features.5.2.*'
+        - 'features.5.8.*'
+        - 'features.5.14.*'
+      params:
+        init_type: 'biased'
+        active_mode: 'mlp'
+    mass shape:
+      layers:
+        - 'features.5.3.*'
+        - 'features.5.9.*'
+        - 'features.5.15.*'
+      params:
+        init_type: 'biased'
+        active_mode: 'mlp'
+    mass margins:
+      layers:
+        - 'features.5.4.*'
+        - 'features.5.10.*'
+        - 'features.5.16.*'
+      params:
+        init_type: 'biased'
+        active_mode: 'mlp'
+    calc morphology:
+      layers:
+        - 'features.5.5.*'
+        - 'features.5.11.*'
+        - 'features.5.17.*'
+      params:
+        init_type: 'biased'
+        active_mode: 'mlp'
+    calc distribution:
+      layers:
+        - 'features.5.6.*'
+        - 'features.5.12.*'
+        - 'features.5.18.*'
+      params:
+        init_type: 'biased'
+        active_mode: 'mlp'
