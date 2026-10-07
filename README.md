@@ -1,7 +1,8 @@
 # Semantic Feature Modulation for Mammographic Lesion Classification
 
 Code accompanying the paper *Semantic Feature Modulation for Mammographic Lesion Classification*
-(S. Mahpod and G. Ben Artzi, MICCAI 2026).
+(S. Mahpod and G. Ben Artzi, MICCAI 2026) — [paper (PDF)](https://papers.miccai.org/miccai-2026/paper/1039_paper.pdf),
+[project page](https://gil-ba.com/SFM.html).
 
 A ConvNeXt-Base classifier (benign vs. malignant) for mammography regions of interest (ROIs). BI-RADS semantic
 descriptors — breast density, mass shape and margins, calcification morphology and distribution — condition the
@@ -214,12 +215,19 @@ bit-identical numbers.
 
 ## Citation
 
-```
-@inproceedings{mahpod2026semantic,
-  title     = {Semantic Feature Modulation for Mammographic Lesion Classification},
-  author    = {Mahpod, Shahar and Ben Artzi, Gil},
+Paper: <https://papers.miccai.org/miccai-2026/paper/1039_paper.pdf>  
+Project page: <https://gil-ba.com/SFM.html>
+
+```bibtex
+@InProceedings{MahSha_Semantic_MICCAI2026,
+  author    = {Mahpod, Shahar AND Ben Artzi, Gil},
+  title     = {{Semantic Feature Modulation for Mammographic Lesion Classification}},
   booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2026},
-  year      = {2026}
+  year      = {2026},
+  publisher = {Springer Nature Switzerland},
+  volume    = {LNCS 16886},
+  month     = {September},
+  page      = {pending}
 }
 ```
 
